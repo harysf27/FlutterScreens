@@ -208,7 +208,3 @@ Container(
         ),
     )
  ```
-
-  ## Contribution and Donation
-
-  Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
