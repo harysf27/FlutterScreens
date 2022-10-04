@@ -169,11 +169,12 @@ class _LoginScreen3State extends State<LoginScreen3>
             child: new Row(
               children: <Widget>[
                 new Expanded(
-                  child: new OutlineButton(
-                    shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(30.0)),
-                    color: Colors.redAccent,
-                    highlightedBorderColor: Colors.white,
+                  child: new OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: Colors.redAccent, shape: new RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.circular(30.0)), disabledForegroundColor: Colors.white.withOpacity(0.38),
+                    ),
+                    
                     onPressed: () => gotoSignup(),
                     child: new Container(
                       padding: const EdgeInsets.symmetric(
@@ -207,10 +208,13 @@ class _LoginScreen3State extends State<LoginScreen3>
             child: new Row(
               children: <Widget>[
                 new Expanded(
-                  child: new FlatButton(
-                    shape: new RoundedRectangleBorder(
+                  child: new TextButton(
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.white, shape: new RoundedRectangleBorder(
                         borderRadius: new BorderRadius.circular(30.0)),
-                    color: Colors.white,
+
+                    ),
+                    
                     onPressed: () => gotoLogin(),
                     child: new Container(
                       padding: const EdgeInsets.symmetric(
@@ -373,7 +377,7 @@ class _LoginScreen3State extends State<LoginScreen3>
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(right: 20.0),
-                child: new FlatButton(
+                child: new TextButton(
                   child: new Text(
                     "Forgot Password?",
                     style: TextStyle(
@@ -395,11 +399,14 @@ class _LoginScreen3State extends State<LoginScreen3>
             child: new Row(
               children: <Widget>[
                 new Expanded(
-                  child: new FlatButton(
-                    shape: new RoundedRectangleBorder(
+                  child: new TextButton(
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.redAccent, shape: new RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(30.0),
                     ),
-                    color: Colors.redAccent,
+
+                    ),
+                    
                     onPressed: () => {},
                     child: new Container(
                       padding: const EdgeInsets.symmetric(
@@ -466,23 +473,28 @@ class _LoginScreen3State extends State<LoginScreen3>
                     child: new Row(
                       children: <Widget>[
                         new Expanded(
-                          child: new FlatButton(
-                            shape: new RoundedRectangleBorder(
+                          child: new TextButton(
+                            style: TextButton.styleFrom(
+                              foregroundColor: Color(0Xff3B5998), shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
                             ),
-                            color: Color(0Xff3B5998),
+                            ),
+                            
                             onPressed: () => {},
                             child: new Container(
                               child: new Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   new Expanded(
-                                    child: new FlatButton(
+                                    child: new TextButton(
                                       onPressed: ()=>{},
-                                      padding: EdgeInsets.only(
+                                      style: TextButton.styleFrom(
+                                        padding: EdgeInsets.only(
                                         top: 20.0,
                                         bottom: 20.0,
+                                        ),
                                       ),
+                                      
                                       child: new Row(
                                         mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
@@ -520,23 +532,28 @@ class _LoginScreen3State extends State<LoginScreen3>
                     child: new Row(
                       children: <Widget>[
                         new Expanded(
-                          child: new FlatButton(
-                            shape: new RoundedRectangleBorder(
+                          child: new TextButton(
+                            style: TextButton.styleFrom(
+                              foregroundColor: Color(0Xffdb3236), shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
                             ),
-                            color: Color(0Xffdb3236),
+                            ),
+                            
                             onPressed: () => {},
                             child: new Container(
                               child: new Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   new Expanded(
-                                    child: new FlatButton(
+                                    child: new TextButton(
                                       onPressed: ()=>{},
-                                      padding: EdgeInsets.only(
+                                      style: TextButton.styleFrom(
+                                        padding: EdgeInsets.only(
                                         top: 20.0,
                                         bottom: 20.0,
+                                       ),
                                       ),
+                                      
                                       child: new Row(
                                         mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
@@ -760,7 +777,7 @@ class _LoginScreen3State extends State<LoginScreen3>
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(right: 20.0),
-                  child: new FlatButton(
+                  child: new TextButton(
                     child: new Text(
                       "Already have an account?",
                       style: TextStyle(
@@ -782,11 +799,13 @@ class _LoginScreen3State extends State<LoginScreen3>
               child: new Row(
                 children: <Widget>[
                   new Expanded(
-                    child: new FlatButton(
-                      shape: new RoundedRectangleBorder(
+                    child: new TextButton(
+                      style: TextButton.styleFrom(
+                        foregroundColor: Colors.redAccent, shape: new RoundedRectangleBorder(
                         borderRadius: new BorderRadius.circular(30.0),
+                        ),
                       ),
-                      color: Colors.redAccent,
+                      
                       onPressed: () => {},
                       child: new Container(
                         padding: const EdgeInsets.symmetric(

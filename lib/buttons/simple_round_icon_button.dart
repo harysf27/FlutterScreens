@@ -45,12 +45,15 @@ class SimpleRoundIconButton extends StatelessWidget {
                             offset: Offset(-10.0, 0.0),
                             child: new Container(
                               padding: const EdgeInsets.all(5.0),
-                              child: FlatButton(
-                                shape: new RoundedRectangleBorder(
-                                    borderRadius:
-                                        new BorderRadius.circular(28.0)),
-                                splashColor: Colors.white,
-                                color: Colors.white,
+                              child: TextButton(
+                                style: TextButton.styleFrom(
+                                      shape: new RoundedRectangleBorder(
+                                      borderRadius:
+                                      new BorderRadius.circular(28.0)),
+                                      primary: Colors.white,
+                                      onSurface: Colors.white,
+                                ),
+                          
                                 child: Icon(
                                   icon.icon,
                                   color: iconColor == null
@@ -78,12 +81,15 @@ class SimpleRoundIconButton extends StatelessWidget {
                             offset: Offset(10.0, 0.0),
                             child: new Container(
                               padding: const EdgeInsets.all(5.0),
-                              child: FlatButton(
-                                shape: new RoundedRectangleBorder(
+                              child: TextButton(
+                                style: TextButton.styleFrom(
+                                  shape: new RoundedRectangleBorder(
                                     borderRadius:
                                         new BorderRadius.circular(28.0)),
-                                splashColor: Colors.white,
-                                color: Colors.white,
+                                  primary: Colors.white,
+                                  onSurface: Colors.white,
+                                ),
+                                
                                 child: Icon(
                                   icon.icon,
                                   color: iconColor == null

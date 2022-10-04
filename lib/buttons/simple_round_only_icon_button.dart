@@ -129,12 +129,15 @@ class SimpleRoundOnlyIconButton extends StatelessWidget {
                                     right: 5.0,
                                     top: 10.0,
                                     bottom: 10.0),
-                                child: FlatButton(
-                                  shape: new RoundedRectangleBorder(
+                                child: TextButton(
+                                  style: TextButton.styleFrom(
+                                      shape: new RoundedRectangleBorder(
                                       borderRadius:
-                                          new BorderRadius.circular(28.0)),
-                                  splashColor: Colors.white,
-                                  color: Colors.white,
+                                      new BorderRadius.circular(28.0)),
+                                      // ignore: deprecated_member_use
+                                      primary: Colors.white, disabledForegroundColor: Colors.white.withOpacity(0.38),
+                                  ),
+                                  
                                   child: Icon(
                                     icon!.icon,
                                     color: this.iconColor,
